@@ -1,0 +1,90 @@
+#kanban {
+    width: 100%;
+    margin-left: 25px;
+  
+    .column {
+      padding: 10px;
+      border-radius: $border-radius;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      background-color: $column-color;
+      width: 330px;
+      display: inline-block;
+      vertical-align: top;
+  
+      .card {
+        background-color: $white-color;
+        border-radius: $border-radius;
+        padding: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.205);
+        margin-bottom: 10px;
+        font-size: 15px;
+  
+        &:hover {
+          color: $white-color;
+          background-color: $hovercard-color;
+          cursor: pointer;
+  
+          .tags i {
+            color: $hovercard-color;
+          }
+        }
+      }
+    }
+}
+
+h3 {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.tags {
+    display: flex;
+    align-items:flex-start;
+    width: 28px;
+}
+
+.tag-front {
+    color: $white-color;
+    background-color: rgb(27, 196, 5);
+    padding: 5px;
+    border-radius: $tagclose-radius;
+}
+
+.tag-back {
+    color: $white-color;
+    background-color: $red-color;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: $tagclose-radius;
+    margin: 0 8px;
+
+}
+
+.tag-device {
+    color: $white-color;
+    background-color: rgb(255, 238, 0);
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: $tagclose-radius;
+}
+
+.close {
+    color: $white-color;
+    background-color: $red-color;
+    float: right;
+    transform: scale(0.6);
+    padding: 9px 12px;
+    border-radius: $tagclose-radius;
+
+    &:hover {
+        background-color: rgb(121, 9, 9);
+    }
+}
